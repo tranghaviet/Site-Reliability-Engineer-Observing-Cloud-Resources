@@ -1,8 +1,9 @@
 terraform {
    backend "s3" {
-     bucket = "udacity-terraform-course1"
+     bucket = "udacity-sre-cloud-observation-terraform"
+    #  bucket = "udacity-sre-cloud-observation-ami"
      key    = "terraform/terraform.tfstate"
-     region = "us-east-2"
+     region = "us-east-1"
    }
  }
 

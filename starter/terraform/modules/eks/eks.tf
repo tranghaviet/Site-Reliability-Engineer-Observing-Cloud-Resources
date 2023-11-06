@@ -1,6 +1,7 @@
 resource "aws_eks_cluster" "cluster" {
    name     = "${var.name}-cluster"
-   version  = "1.21"
+  #  min version is 1.23 https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html
+   version  = "1.23"
    role_arn = aws_iam_role.eks_cluster_role.arn
 
    vpc_config {
